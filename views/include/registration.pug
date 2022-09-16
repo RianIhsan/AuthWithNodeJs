@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+    .reg-box
+        .header
+            h2 Daftar
+        form(action="/auth_reg", method="post")
+            .form-group
+                label(for="fullname") Nama Lengkap
+                input(type="text", name="fullname" class="form-control")
+            .form-group
+                label(for="email") Email
+                input(type="email", name="email" class="form-control")
+            .form-group
+                label(for="password") Pasword
+                input(type="password", name="password" class="form-control")
+            .form-group
+                label(for="cpassword") Konfirmasi Pasword
+                input(type="password", name="cpassword" class="form-control")
+            button(type="submit" class="btn btn-primary") Submit
+            
